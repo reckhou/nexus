@@ -1,16 +1,13 @@
 var res = {
-    HelloWorld_png : "res/HelloWorld.png",
-    CloseNormal_png : "res/CloseNormal.png",
-    CloseSelected_png : "res/CloseSelected.png",
     Ball_png : "res/ball.png",
-    Bg_jpg: "res/bg.jpg"
+    Bg_png: "res/bg.png",
+    Avatar_png: "res/avatar.png",
+    Explode_png: "res/explode.png",
+    
 };
 
 var g_resources = [
     //image
-    res.HelloWorld_png,
-    res.CloseNormal_png,
-    res.CloseSelected_png
 
     //plist
 

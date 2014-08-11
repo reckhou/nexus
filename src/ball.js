@@ -9,11 +9,11 @@ var Ball = cc.Sprite.extend ({
   spawn:function() {
     var scale = this.scale;
     this.scale = 0;
-    this.runAction(cc.ScaleTo(0.2, scale));
+    this.runAction(cc.ScaleTo(0.05, scale));
   },
   moving:function(aX, aY, vX, vY) {
     cc.log(aX+"_"+aY);
-    if (Math.abs(aX) < 1 && Math.abs(aY) < 1) {
+    if (Math.abs(aX) < 0.5 && Math.abs(aY) < 0.5) {
       cc.log("too slow");
       this.despawn();
       return;
@@ -61,6 +61,6 @@ var Ball = cc.Sprite.extend ({
     this.removeFromParent(true);
   },
   despawn:function() {
-    this.runAction(cc.Sequence.create(cc.ScaleTo.create(0.2, 0), cc.CallFunc.create(this.CleanUp, this, null)));
+    this.runAction(cc.Sequence.create(cc.ScaleTo.create(0.05, 0), cc.CallFunc.create(this.CleanUp, this, null)));
   }
 });

@@ -6,7 +6,7 @@ var HelloWorldLayer = cc.Layer.extend({
     lastMovePos: null,
     isAcc: false,
     curBall: null,
-    aScale : 10000, // scale for object's acceration
+    aScale : 8000, // scale for object's acceration
     ctor:function () {
         this._super();
         cc.eventManager.addListener({
@@ -16,11 +16,10 @@ var HelloWorldLayer = cc.Layer.extend({
           onTouchMoved: this.onTouchMoved,
           onTouchEnded: this.onTouchEnded
         }, this);
-        var bg = cc.Sprite.create(res.Bg_jpg);
+        var bg = cc.Sprite.create(res.Bg_png);
         var winSize = cc.director.getWinSize();
         bg.x = winSize.width/2;
         bg.y = winSize.height/2;
-        bg.setRotation(90);
         this.addChild(bg);
         return true;
     },
@@ -42,7 +41,7 @@ var HelloWorldLayer = cc.Layer.extend({
       }
       target.curBall.setPosition(ballPos);
       target.addChild(target.curBall);
-      target.curBall.scale = 0.15;
+      target.curBall.scale = 0.1;
       target.curBall.spawn();
 
       return true;
