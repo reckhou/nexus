@@ -12,7 +12,7 @@ var Ball = cc.Sprite.extend ({
     this.runAction(cc.ScaleTo(0.05, scale));
   },
   moving:function(aX, aY, vX, vY) {
-    cc.log(aX+"_"+aY);
+//    cc.log(aX+"_"+aY);
     if (Math.abs(aX) < 0.5 && Math.abs(aY) < 0.5) {
       cc.log("too slow");
       this.despawn();

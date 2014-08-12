@@ -21,6 +21,23 @@ var HelloWorldLayer = cc.Layer.extend({
         bg.x = winSize.width/2;
         bg.y = winSize.height/2;
         this.addChild(bg);
+        
+        var avatar = cc.Sprite.create(res.Avatar_png);
+        avatar.setPosition(cc.p(winSize.width/6, 100));
+        this.addChild(avatar);
+        
+        var avatar1 = cc.Sprite.create(res.Avatar_png);
+        avatar1.setPosition(cc.p(winSize.width/2, 100));
+        this.addChild(avatar1);
+        
+        var avatar2 = cc.Sprite.create(res.Avatar_png);
+        avatar2.setPosition(cc.p(winSize.width*5/6, 100));
+        this.addChild(avatar2);
+        
+        var enemy = new Enemy();
+        enemy.setPosition(cc.p(300, 300));
+        this.addChild(enemy);
+        
         return true;
     },
     onTouchBegan:function(touch, event) {
@@ -62,7 +79,6 @@ var HelloWorldLayer = cc.Layer.extend({
       }
       
       var deltaT = (now.getTime() - target.lastMoveTime.getTime())/1000; // second
-      cc.log(deltaT);
       var deltaX = curPos.x - target.lastMovePos.x;
       var deltaY = curPos.y - target.lastMovePos.y;
       var aX = deltaX * 2 / (deltaT*deltaT) / target.aScale;
@@ -93,7 +109,6 @@ var HelloWorldLayer = cc.Layer.extend({
       var endPos = touch.getLocation();
       var now = new Date();
       var deltaT = (now.getTime() - target.touchStartTime.getTime())/1000; // second
-      cc.log(deltaT);
       var deltaX = endPos.x - target.touchStartPos.x;
       var deltaY = endPos.y - target.touchStartPos.y;
       var aX = deltaX * 2 / (deltaT*deltaT) / target.aScale;
