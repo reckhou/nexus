@@ -25,6 +25,12 @@ var HelloWorldLayer = cc.Layer.extend({
         this.battleLayer = new BattleLayer();
         this.addChild(this.battleLayer);
         
+        ccs.armatureDataManager.addArmatureFileInfo(res.CrazySpine0_png, res.CrazySpine0_plist, res.CrazySpine_ExportJson);
+        var armature = ccs.Armature.create("crazySpine");
+        armature.getAnimation().play("idle");
+        armature.setPosition(cc.p(300, 400));
+        this.addChild(armature);
+        
         return true;
     },
     onTouchBegan:function(touch, event) {

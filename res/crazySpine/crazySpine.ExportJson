@@ -1,0 +1,442 @@
+{
+  "content_scale": 1.0,
+  "armature_data": [
+    {
+      "strVersion": "1.4.0.1",
+      "version": 1.401,
+      "name": "crazySpine",
+      "bone_data": [
+        {
+          "name": "body",
+          "parent": "",
+          "dI": 0,
+          "x": 0.49996280670166016,
+          "y": -5.0,
+          "z": 3,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 0.0,
+          "kY": -1.1920929E-07,
+          "arrow_x": 105.004638671875,
+          "arrow_y": 8.4898194472771138E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "body.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": -15.0,
+                  "y": -25.0,
+                  "cX": 0.977777839,
+                  "cY": 1.46774185,
+                  "kX": 0.0,
+                  "kY": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rightspine",
+          "parent": "body",
+          "dI": 0,
+          "x": -0.91167449951171875,
+          "y": 5.0885457992553711,
+          "z": 5,
+          "cX": 1.53334355,
+          "cY": 1.13559294,
+          "kX": -0.7853982,
+          "kY": 0.7853982,
+          "arrow_x": 73.539093017578125,
+          "arrow_y": -4.602540866471827E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "armor.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 38.69009,
+                  "y": 11.0076408,
+                  "cX": 0.9970443,
+                  "cY": 1.22300065,
+                  "kX": 0.0,
+                  "kY": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rightspine2",
+          "parent": "rightspine",
+          "dI": 0,
+          "x": 73.288810729980469,
+          "y": -1.0350713729858398,
+          "z": 5,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 4.18879032,
+          "kY": -1.39626336,
+          "arrow_x": 83.862968444824219,
+          "arrow_y": 5.4459960665553808E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "ax.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 95.01545,
+                  "y": 4.90378,
+                  "cX": 0.8357377,
+                  "cY": 0.7300569,
+                  "kX": 1.57079637,
+                  "kY": -1.57079661
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leftspine",
+          "parent": "body",
+          "dI": 0,
+          "x": -32.1860466003418,
+          "y": 9.7749671936035156,
+          "z": 4,
+          "cX": 1.02941048,
+          "cY": 1.0,
+          "kX": -2.3561945,
+          "kY": 2.35619426,
+          "arrow_x": 101.40008544921875,
+          "arrow_y": -9.6867355750873685E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "armor.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 50.0,
+                  "y": 0.0,
+                  "cX": 1.7,
+                  "cY": 1.7,
+                  "kX": 3.14159274,
+                  "kY": -3.141593
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leftspine2",
+          "parent": "leftspine",
+          "dI": 0,
+          "x": 97.396163940429688,
+          "y": 1.9920954704284668,
+          "z": 4,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 4.89576435,
+          "kY": -4.89576435,
+          "arrow_x": 97.672767639160156,
+          "arrow_y": 9.31310023588594E-06,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "ax.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 134.019882,
+                  "y": 5.05653572,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 1.57079637,
+                  "kY": -1.57079649
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "crazySpine",
+      "mov_data": [
+        {
+          "name": "idle",
+          "dr": 61,
+          "lp": true,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 1.0,
+          "mov_bone_data": [
+            {
+              "name": "rightspine2",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -0.5235988,
+                  "kY": 0.5235988,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.17453292,
+                  "kY": -0.17453292,
+                  "fi": 30,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -0.5235988,
+                  "kY": 0.5235988,
+                  "fi": 60,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            },
+            {
+              "name": "leftspine2",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.5235988,
+                  "kY": -0.5235988,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.17453292,
+                  "kY": 0.17453292,
+                  "fi": 30,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.5235988,
+                  "kY": -0.5235988,
+                  "fi": 60,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            },
+            {
+              "name": "body",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 30.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 30,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 60,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            },
+            {
+              "name": "rightspine",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.5235988,
+                  "kY": -0.5235988,
+                  "fi": 30,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": -1.11758709E-08,
+                  "fi": 60,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            },
+            {
+              "name": "leftspine",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -0.5235988,
+                  "kY": 0.5235988,
+                  "fi": 30,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": -1.49011612E-08,
+                  "fi": 60,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "body",
+      "width": 90.0,
+      "height": 124.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "armor",
+      "width": 82.0,
+      "height": 80.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "ax",
+      "width": 97.0,
+      "height": 259.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "crazySpine0.plist"
+  ],
+  "config_png_path": [
+    "crazySpine0.png"
+  ]
+}

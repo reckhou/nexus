@@ -22,8 +22,7 @@ var BattleLayer = cc.Layer.extend({
     var avatar2 = cc.Sprite.create(res.Avatar_png);
     avatar2.setPosition(cc.p(winSize.width*5/6, 100));
     this.addChild(avatar2);
-    
-    this.schedule(this.spawnEnemy, 1);
+    this.schedule(this.spawnEnemy, 2);
     this.schedule(this.update, 1/60);
   },
   spawnEnemy:function() {
@@ -66,9 +65,6 @@ var BattleLayer = cc.Layer.extend({
     }
   },
   collideChk:function() {
-    
-  },
-  spawnEnemy:function() {
     
   }
 });
