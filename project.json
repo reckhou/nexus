@@ -13,6 +13,7 @@
     "src/resource.js",
     "src/app.js",
     "src/ball.js",
-    "src/enemy.js"
+    "src/enemy.js",
+    "src/battleLayer.js"
   ]
 }

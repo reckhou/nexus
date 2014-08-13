@@ -1,4 +1,3 @@
-
 var HelloWorldLayer = cc.Layer.extend({
     touchStartTime: null,
     lastMoveTime: null,
@@ -7,6 +6,7 @@ var HelloWorldLayer = cc.Layer.extend({
     isAcc: false,
     curBall: null,
     aScale : 8000, // scale for object's acceration
+    battleLayer: null,
     ctor:function () {
         this._super();
         cc.eventManager.addListener({
@@ -22,21 +22,8 @@ var HelloWorldLayer = cc.Layer.extend({
         bg.y = winSize.height/2;
         this.addChild(bg);
         
-        var avatar = cc.Sprite.create(res.Avatar_png);
-        avatar.setPosition(cc.p(winSize.width/6, 100));
-        this.addChild(avatar);
-        
-        var avatar1 = cc.Sprite.create(res.Avatar_png);
-        avatar1.setPosition(cc.p(winSize.width/2, 100));
-        this.addChild(avatar1);
-        
-        var avatar2 = cc.Sprite.create(res.Avatar_png);
-        avatar2.setPosition(cc.p(winSize.width*5/6, 100));
-        this.addChild(avatar2);
-        
-        var enemy = new Enemy();
-        enemy.setPosition(cc.p(300, 300));
-        this.addChild(enemy);
+        this.battleLayer = new BattleLayer();
+        this.addChild(this.battleLayer);
         
         return true;
     },

@@ -7,9 +7,9 @@ var Ball = cc.Sprite.extend ({
     this._super(res);
   },
   spawn:function() {
-    var scale = this.scale;
-    this.scale = 0;
-    this.runAction(cc.ScaleTo(0.05, scale));
+//    var scale = this.scale;
+//    this.scale = 0;
+//    this.runAction(cc.ScaleTo(0.05, scale));
   },
   moving:function(aX, aY, vX, vY) {
 //    cc.log(aX+"_"+aY);
